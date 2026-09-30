@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="students.html">Students</a>
+</nav>
+
+<div class="box">
+
+    <h1>Students</h1>
+
+    <input
+        id="studentSearch"
+        type="text"
+        placeholder="Search student"
+    >
+
+    <p id="studentStatus">Loading...</p>
+
+    <div id="students"></div>
+
+</div>
+
+<script>
+
+fetch("students.json")
+
+.then(response => {
+    if (!response.ok) {
+        throw new Error("Unable to load students");
+    }
+
+    return response.json();
+})
+
+.then(data => {
+
+    const search = document.getElementById("studentSearch");
+    const list = document.getElementById("students");
+    const status = document.getElementById("studentStatus");
+
+    status.innerHTML = "";
+
+    function showStudents() {
+
+        const text = search.value.toLowerCase();
+
+        const result = data.filter(student =>
+            student.name.toLowerCase().includes(text)
+        );
+
+        list.innerHTML = result.map(student => `
+            <div class="card">
+                <h3>${student.name}</h3>
+                <p>Course: ${student.course}</p>
+            </div>
+        `).join("");
+
+        if (result.length === 0) {
+            list.innerHTML = "<p>No students found.</p>";
+        }
+    }
+
+    showStudents();
+
+    search.addEventListener("input", showStudents);
+
+})
+
+.catch(error => {
+
+    document.getElementById("studentStatus").innerHTML =
+        "Error loading students";
+
+});
+
+</script>
+
+</body>
+</html>

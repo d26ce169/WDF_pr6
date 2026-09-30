@@ -1,0 +1,17 @@
+[
+{"q":"What is EventSite?","a":"A student event website."},
+{"q":"How can I register?","a":"Click an event."},
+{"q":"Can I search?","a":"Yes."},
+{"q":"Can I filter?","a":"Yes."},
+{"q":"Can I sort?","a":"Yes."},
+{"q":"Is JSON used?","a":"Yes."},
+{"q":"Is Fetch used?","a":"Yes."},
+{"q":"Is it responsive?","a":"Yes."},
+{"q":"Can students join?","a":"Yes."},
+{"q":"Are events updated?","a":"Yes."},
+{"q":"Can I view students?","a":"Yes."},
+{"q":"Does pagination work?","a":"Yes."},
+{"q":"What is JavaScript used for?","a":"Dynamic data."},
+{"q":"Can I register online?","a":"Yes."},
+{"q":"Is it mobile friendly?","a":"Yes."}
+]

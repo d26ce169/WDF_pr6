@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="students.html">Students</a>
+</nav>
+
+<div class="box">
+    <h1>Events</h1>
+
+    <input id="search" placeholder="Search event">
+
+    <select id="filter">
+        <option>All</option>
+        <option>Technology</option>
+        <option>Sports</option>
+        <option>Cultural</option>
+    </select>
+
+    <select id="sort">
+        <option>Name</option>
+        <option>Date</option>
+    </select>
+
+    <div id="list"></div>
+
+    <button onclick="prev()">Previous</button>
+    <button onclick="next()">Next</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

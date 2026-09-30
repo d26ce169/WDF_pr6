@@ -1,0 +1,17 @@
+[
+{"name":"Web","category":"Technology","date":"2026-10-01"},
+{"name":"AI","category":"Technology","date":"2026-10-03"},
+{"name":"Cricket","category":"Sports","date":"2026-10-05"},
+{"name":"Football","category":"Sports","date":"2026-10-07"},
+{"name":"Robotics","category":"Technology","date":"2026-10-09"},
+{"name":"Music","category":"Cultural","date":"2026-10-11"},
+{"name":"Dance","category":"Cultural","date":"2026-10-13"},
+{"name":"Coding","category":"Technology","date":"2026-10-15"},
+{"name":"Basketball","category":"Sports","date":"2026-10-17"},
+{"name":"Art","category":"Cultural","date":"2026-10-19"},
+{"name":"Cyber","category":"Technology","date":"2026-10-21"},
+{"name":"Chess","category":"Sports","date":"2026-10-23"},
+{"name":"Drama","category":"Cultural","date":"2026-10-25"},
+{"name":"Cloud","category":"Technology","date":"2026-10-27"},
+{"name":"Badminton","category":"Sports","date":"2026-10-29"}
+]
